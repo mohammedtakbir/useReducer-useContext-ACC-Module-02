@@ -1,5 +1,6 @@
 import { createContext, useState } from 'react';
 import './App.css';
+import LongForm from './Pages/LongForm';
 import Parent from './Pages/Parent';
 import UseReducerCounter from './Pages/UseReducerCounter';
 
@@ -12,10 +13,11 @@ function App() {
 
   return (
     <COUNTER_CONTEXT.Provider value={value}>
-      <div className="App">
-        <Parent />
-        <UseReducerCounter />
-      </div>
+      <>
+        {/* <Parent />
+        <UseReducerCounter /> */}
+        <LongForm />
+      </>
     </COUNTER_CONTEXT.Provider>
   );
 }
